@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "romanceFatal";
+  src: url("./fonts/romanceFatal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.main-font {
+  font-family: "romanceFatal";
+}
+
+body {
+  background: url(/rikka.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: cover;
+}
