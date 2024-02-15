@@ -1,6 +1,4 @@
-export var fonts = ["romanceFatal"]
-
-export var fist = [
+export var first = [
   "The",
   "My",
   "His",
