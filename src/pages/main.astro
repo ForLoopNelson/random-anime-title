@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {first,second,third,fourth} from "../scripts/words";
+import '../styles/global.css'
+---
+
+<Layout title="My Anime Title is Magically Random!">
+	<main>
+		
+		<h1 class="main-font instructions">My Anime Title is Magically <span class="text-gradient">Random!</span></h1>
+		<p class="instructions">
+			Make an Anime title from a collection of Random words. <strong>You know just for fun.</strong><br />
+			
+		</p>
+    <ul>
+		<span id="random-font" >{first}</span>
+		<section>
+		<input type="text" class="guess" >
+		<button id="guess-btn" type="submit">Guess</button>
+		</section>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 76%), rgba(var(--accent-dark), 93%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+
+ 
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
