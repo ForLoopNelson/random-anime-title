@@ -10,7 +10,7 @@ import '../styles/global.css'
 		<h1 class="main-font instructions">My Anime Title is Magically <span class="text-gradient">Random!</span></h1>
 		<p class="instructions">
 			Make an Anime title from a collection of Random words. <strong>You know just for fun.</strong><br />
-			
+			<a href="/main" id="main" >Click here to begin!</a>
 		</p>
 		<ul role="list" class="link-card-grid">
 		
@@ -43,15 +43,7 @@ import '../styles/global.css'
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
+	
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
@@ -65,6 +57,18 @@ import '../styles/global.css'
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
+	}
+
+	 #main {
+    color:lightpink;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+  }
+
+	#main:hover {
+		color: firebrick;
 	}
 	.instructions {
 		margin-bottom: 2rem;
