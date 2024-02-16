@@ -2,6 +2,25 @@
 import Layout from '../layouts/Layout.astro';
 import {first,second,third,fourth} from "../scripts/words";
 import '../styles/global.css'
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
+
+const randomFirstWordIndex = getRandomIndex(first);
+const randomSecondWordIndex = getRandomIndex(second);
+const randomThirdWordIndex = getRandomIndex(third);
+const randomFourthWordIndex = getRandomIndex(fourth);
+
+
+const selectedFirstWord = first[randomFirstWordIndex];
+const selectedSecondWord = second[randomSecondWordIndex];
+const selectedThirdWord = third[randomThirdWordIndex];
+const selectedFourthWord = second[randomFourthWordIndex];
+const selectedWords = `${selectedFirstWord} ${selectedSecondWord} ${selectedThirdWord} ${selectedFourthWord}`
+
+
+
 ---
 
 <Layout title="My Anime Title is Magically Random!">
@@ -12,11 +31,11 @@ import '../styles/global.css'
 			Make an Anime title from a collection of Random words. <strong>You know just for fun.</strong><br />
 			
 		</p>
-    <ul>
-		<span id="random-font" >{first}</span>
+    <ul class="link-card-grid">
+		<span id="random" >{selectedWords}</span>
 		<section>
-		<input type="text" class="guess" >
-		<button id="guess-btn" type="submit">Guess</button>
+		
+		<button id="generate-title" type="submit">Generate Title</button>
 		</section>
 		</ul>
 	</main>
@@ -66,7 +85,11 @@ import '../styles/global.css'
 		color: rgb(var(--accent-light));
 	}
 
- 
+ #generate-title {
+	border-radius: 5px;
+	background: blue;
+	color: aliceblue;
+ }
 
 	.link-card-grid {
 		display: grid;
