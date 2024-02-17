@@ -19,8 +19,29 @@ export var second = [
   "Misfit",
   "Adventure",
   "Cute",
+  "Oni-chan",
+  "Traveling",
+  "Mystical",
+  "Succubus",
+  "Princess",
+  "Prince",
+  "Kingdom",
+  "Reincarnation",
 ]
 
-export var third = ["The", "of", "about", "from", "is"]
+export var third = ["of", "about", "from", "is"]
 
-export var fourth = ["World", "Dangers", "Dungeon", "Castle", "Journey"]
+export var fourth = [
+  "Worlds",
+  "Dangers",
+  "Dungeon",
+  "Castle",
+  "Journey",
+  "Universe",
+  "Potions",
+  "Kawii",
+  "Precious",
+  "Disgusted",
+  "Faints",
+  "Memory",
+]
