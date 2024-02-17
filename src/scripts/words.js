@@ -16,9 +16,11 @@ export var second = [
   "Magical",
   "Sister",
   "Friends",
+  "Misfit",
   "Adventure",
+  "Cute",
 ]
 
 export var third = ["The", "of", "about", "from", "is"]
 
-export var fourth = ["World", "Cute", "Dangers", "Dungeon", "Castle", "Journey"]
+export var fourth = ["World", "Dangers", "Dungeon", "Castle", "Journey"]
