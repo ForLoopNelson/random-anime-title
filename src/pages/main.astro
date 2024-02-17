@@ -35,7 +35,12 @@ const selectedWords = `${selectedFirstWord} ${selectedSecondWord} ${selectedThir
 		<span id="random" >{selectedWords}</span>
 		<section>
 		
-		<button id="generate-title" type="submit">Generate Title</button>
+		<button class="c-button" id="generate-title">
+  <span class="c-main">
+    <span class="c-ico"><span class="c-blur"></span> <span class="ico-text">+</span></span>
+    generate title
+  </span>
+</button>
 		</section>
 		</ul>
 	</main>
@@ -86,7 +91,7 @@ const selectedWords = `${selectedFirstWord} ${selectedSecondWord} ${selectedThir
 	}
 
  #generate-title {
-	border-radius: 5px;
+
 	background: blue;
 	color: aliceblue;
  }
