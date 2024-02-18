@@ -1,4 +1,4 @@
-import { first, second, third, fourth } from "../scripts/words"
+import { first, second, third, fourth, fifth } from "../scripts/words"
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length)
@@ -30,7 +30,8 @@ function generateNewWords() {
   const newSecondWord = getRandomWord(second)
   const newThirdWord = getRandomWord(third)
   const newFourthWord = getRandomWord(fourth)
-  const newWords = `${newFirstWord} ${newSecondWord} ${newThirdWord} ${newFourthWord}`
+  const newFifthWord = getRandomWord(fifth)
+  const newWords = `${newFirstWord} ${newSecondWord} ${newThirdWord} ${newFourthWord} ${newFifthWord}`
 
   document.querySelector("#random").textContent = newWords
 }
