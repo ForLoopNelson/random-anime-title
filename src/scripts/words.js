@@ -5,7 +5,7 @@ export var first = [
   "Her",
   "Their",
   "A",
-  "It's",
+  "It is",
   "This",
   "That",
 ]
@@ -31,7 +31,9 @@ export var second = [
 
 export var third = ["of", "about", "from", "is"]
 
-export var fourth = [
+export var fourth = ["a", "an", "the"]
+
+export var fifth = [
   "Worlds",
   "Dangers",
   "Dungeon",
