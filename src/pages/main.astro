@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import {first,second,third,fourth} from "../scripts/words";
+import Footer from '../components/footer.astro'
+import {first,second,third,fourth,fifth} from "../scripts/words";
 import '../styles/global.css'
 
 function getRandomIndex(array) {
@@ -11,13 +12,15 @@ const randomFirstWordIndex = getRandomIndex(first);
 const randomSecondWordIndex = getRandomIndex(second);
 const randomThirdWordIndex = getRandomIndex(third);
 const randomFourthWordIndex = getRandomIndex(fourth);
+const randomFifthWordIndex = getRandomIndex(fifth);
 
 
 const selectedFirstWord = first[randomFirstWordIndex];
 const selectedSecondWord = second[randomSecondWordIndex];
 const selectedThirdWord = third[randomThirdWordIndex];
 const selectedFourthWord = second[randomFourthWordIndex];
-const selectedWords = `${selectedFirstWord} ${selectedSecondWord} ${selectedThirdWord} ${selectedFourthWord}`
+const selectedFifthWord = second[randomFifthWordIndex];
+const selectedWords = `${selectedFirstWord} ${selectedSecondWord} ${selectedThirdWord} ${selectedFourthWord} ${selectedFifthWord}`
 
 
 
@@ -27,10 +30,7 @@ const selectedWords = `${selectedFirstWord} ${selectedSecondWord} ${selectedThir
 	<main>
 		
 		<h1 class="main-font instructions">My Anime Title is Magically <span class="text-gradient">Random!</span></h1>
-		<p class="instructions">
-			Make an Anime title from a collection of Random words. <strong>You know just for fun.</strong><br />
-			
-		</p>
+		
     <ul class="link-card-grid">
 		<span id="random" >{selectedWords}</span>
 		<section>
@@ -44,6 +44,7 @@ const selectedWords = `${selectedFirstWord} ${selectedSecondWord} ${selectedThir
 		</section>
 		</ul>
 	</main>
+<Footer/>
 </Layout>
 
 <style>
@@ -55,7 +56,16 @@ const selectedWords = `${selectedFirstWord} ${selectedSecondWord} ${selectedThir
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
+		height: 100vh;
 	}
+
+	body {
+	background: url(/aqua.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: cover;
+}
+	
 	
 	h1 {
 		font-size: 4rem;
@@ -71,29 +81,17 @@ const selectedWords = `${selectedFirstWord} ${selectedSecondWord} ${selectedThir
 		background-size: 400%;
 		background-position: 0%;
 	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 76%), rgba(var(--accent-dark), 93%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
+	
 
  #generate-title {
 
 	background: blue;
 	color: aliceblue;
+ }
+
+ #random {
+	font-size: 2rem;
+	font-family: "romanceFatal";
  }
 
 	.link-card-grid {
