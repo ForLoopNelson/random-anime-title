@@ -5,6 +5,9 @@ export var first = [
   "Her",
   "Their",
   "A",
+  "An",
+  "And",
+  "But",
   "It is",
   "This",
   "That",
@@ -19,6 +22,9 @@ export var second = [
   "Misfit",
   "Adventure",
   "Cute",
+  "Girl",
+  "Misfit",
+  "Colorful",
   "Oni-chan",
   "Traveling",
   "Mystical",
@@ -29,9 +35,23 @@ export var second = [
   "Reincarnation",
 ]
 
-export var third = ["of", "about", "from", "is"]
+export var third = [
+  "Maiden",
+  "Dragon",
+  "Angel",
+  "Demon",
+  "Flirt",
+  "Foxy",
+  "Working",
+  "Business",
+  "Schoolgirl",
+  "Loving",
+  "Desires",
+  "Country",
+  "World",
+]
 
-export var fourth = ["a", "an", "the"]
+export var fourth = ["an", "the", "of", "and", "from", "to"]
 
 export var fifth = [
   "Worlds",
@@ -43,7 +63,7 @@ export var fifth = [
   "Potions",
   "Kawii",
   "Precious",
-  "Disgusted",
+  "Panties",
   "Faints",
   "Memory",
 ]
