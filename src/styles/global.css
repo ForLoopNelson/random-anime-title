@@ -5,6 +5,13 @@
   font-style: normal;
   font-display: block;
 }
+@font-face {
+  font-family: "OtakuRantBold";
+  src: url("./fonts/OtakuRantBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
 .main-font {
   font-family: "romanceFatal";
@@ -17,8 +24,8 @@ button {
 .c-button {
   background: linear-gradient(
     140deg,
-    rgba(75, 118, 200, 1) 0%,
-    rgba(31, 70, 145, 1) 100%
+    rgb(108, 75, 200) 0%,
+    rgb(92, 31, 145) 100%
   );
   border-radius: 45px;
   font-size: 25px;
@@ -42,8 +49,8 @@ button {
 .c-ico .c-blur {
   background: linear-gradient(
     318deg,
-    rgba(75, 118, 200, 1) 0%,
-    rgba(31, 70, 145, 1) 100%
+    rgb(127, 75, 200) 0%,
+    rgb(94, 31, 145) 100%
   );
   border-radius: 100%;
   margin-left: 0;
