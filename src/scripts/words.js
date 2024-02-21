@@ -6,11 +6,14 @@ export var first = [
   "Their",
   "A",
   "An",
-  "And",
   "But sometimes",
   "It is",
   "This",
   "That",
+  "Giving",
+  "Romance",
+  "Sleepless",
+  "Powerful",
 ]
 
 export var second = [
@@ -23,6 +26,10 @@ export var second = [
   "Adventure",
   "Cute",
   "Girl",
+  "Bicycle",
+  "Dog",
+  "Rabbit Girl",
+
   "Misfit",
   "Colorful",
   "Oni-chan",
@@ -51,7 +58,7 @@ export var third = [
   "World",
 ]
 
-export var fourth = ["an", "the", "of", "and", "from", "to", "is", "on"]
+export var fourth = ["an", "the", "of", "and", "from", "to", "is", "on", "some"]
 
 export var fifth = [
   "Worlds",
