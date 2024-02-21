@@ -78,3 +78,14 @@ button {
   border: 1px solid rgba(26, 26, 26, 0.5);
   color: rgba(255, 0, 200, 0.967);
 }
+
+/* Mobile Q */
+@media screen and (max-width: 440px) {
+  body {
+    width: calc(100vw - 20px);
+    height: 150vh;
+    background: url(/rikka.jpg);
+    background-size: cover;
+    background-position: center, center;
+  }
+}
