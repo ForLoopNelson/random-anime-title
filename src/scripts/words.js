@@ -29,8 +29,6 @@ export var second = [
   "Bicycle",
   "Dog",
   "Rabbit Girl",
-
-  "Misfit",
   "Colorful",
   "Oni-chan",
   "Traveling",
@@ -47,7 +45,7 @@ export var third = [
   "Dragon",
   "Angel",
   "Demon",
-  "Flirt",
+  "Flirty",
   "Foxy",
   "Working",
   "Business",
@@ -58,7 +56,7 @@ export var third = [
   "World",
 ]
 
-export var fourth = ["an", "the", "of", "and", "from", "to", "is", "on", "some"]
+export var fourth = ["the", "of", "and", "from", "to", "is", "on", "some"]
 
 export var fifth = [
   "Worlds",
@@ -75,6 +73,5 @@ export var fifth = [
   "Powerful",
   "Beautiful",
   "Mysterious",
-  "Strong",
   "Memory",
 ]
