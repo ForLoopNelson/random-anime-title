@@ -75,3 +75,5 @@ export var fifth = [
   "Mysterious",
   "Memory",
 ]
+
+export var recentWords = []
