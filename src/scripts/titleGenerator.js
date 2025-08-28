@@ -1,4 +1,4 @@
-// import arrays
+
 import { first, second, third, fourth, fifth } from "../scripts/words"
 
 // how many words to remember for each position
